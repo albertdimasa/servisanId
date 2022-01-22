@@ -1,0 +1,71 @@
+//Auth
+POST http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+    "name": "Rahmat Abadi", 
+    "email": "albertuhuy@gmail.com", 
+    "password": "123456789", 
+    "confPassword": "123456789"
+}
+
+###
+POST http://localhost:5000/api/login
+Content-Type: application/json
+
+{
+    "email": "albertuhuy@gmail.com", 
+    "password": "123456789"
+}
+
+###
+GET http://localhost:5000/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJSYWhtYXQgQWJhZGkiLCJlbWFpbCI6ImFsYmVydHVodXlAZ21haWwuY29tIiwiaWF0IjoxNjQyNzU3MTA0LCJleHAiOjE2NDI3NTcxMjR9.EhjN99ASgSR1iuJVgWblxWdihY-hjgaYuInyr-Ct2jA
+
+###
+GET http://localhost:5000/api/token
+
+
+###
+GET http://localhost:5000/api/stores
+
+###
+POST http://localhost:5000/api/stores
+Content-Type: application/json
+
+{
+    "nama": "Sabana Cell", 
+    "jam_buka": 7, 
+    "jam_tutup": 23, 
+    "kategori_layanan": "Iphone"
+}
+
+###
+GET http://localhost:5000/api/stores/3
+
+###
+GET http://localhost:5000/api/orders
+
+###
+POST http://localhost:5000/api/orders
+Content-Type: application/json
+
+{
+    "serviceId": 6,
+    "userId":1
+}
+###
+GET http://localhost:5000/api/services
+
+###
+POST http://localhost:5000/api/services
+Content-Type: application/json
+
+{
+    "nama": "Ganti LCD Hp", 
+    "harga": 20000,
+    "storeId":2
+}
+
+
+

@@ -1,0 +1,27 @@
+{
+  "name": "servisan_id",
+  "version": "1.0.0",
+  "description": "this is API for app named Servisan.Id",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "supervisor index.js"
+  },
+  "author": "DAA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albertdimasa/servisan/issues"
+  },
+  "homepage": "https://github.com/albertdimasa/servisan#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^12.0.3",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.13.0",
+    "supervisor": "^0.12.0"
+  }
+}
