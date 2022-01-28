@@ -52,7 +52,8 @@ Content-Type: application/json
 
 {
     "serviceId": 6,
-    "userId":1
+    "userId":1,
+    "storeId":1
 }
 ###
 GET http://localhost:5000/api/services

@@ -13,6 +13,9 @@ Orders.belongsTo(Services, { onDelete: "CASCADE" });
 Users.hasMany(Orders, { onDelete: "CASCADE" });
 Orders.belongsTo(Users, { onDelete: "CASCADE" });
 
+Stores.hasMany(Orders, { onDelete: "CASCADE" });
+Orders.belongsTo(Stores, { onDelete: "CASCADE" });
+
 const relate = db
   .sync({ alter: true })
   .then(() => {
