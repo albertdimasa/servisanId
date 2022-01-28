@@ -9,7 +9,11 @@ import {
   getStoresById,
 } from "../controllers/Stores.js";
 import { getAllOrders, submitOrder } from "../controllers/Orders.js";
-import { addService, getAllServices } from "../controllers/Services.js";
+import {
+  addService,
+  getAllServices,
+  getServicesById,
+} from "../controllers/Services.js";
 
 const router = express.Router();
 
@@ -31,6 +35,7 @@ router.post("/orders", submitOrder);
 
 //Services
 router.get("/services", getAllServices);
+router.get("/services/:id", getServicesById);
 router.post("/services", addService);
 
 export default router;

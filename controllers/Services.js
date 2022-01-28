@@ -17,3 +17,16 @@ export const addService = async (req, res) => {
     console.log(error);
   }
 };
+
+export const getServicesById = async (req, res) => {
+  try {
+    const services = await Services.findAll({
+      where: {
+        storeId: req.params.id,
+      },
+    });
+    res.json(services);
+  } catch (error) {
+    console.log(error);
+  }
+};
